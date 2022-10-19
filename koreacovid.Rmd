@@ -24,7 +24,7 @@ state of a patient must be died or alive - we adjust that as well
   
 # Question 1 - Is dying independent of sex
 
-
+In order to determine if dying is independent of sex we will use the helper file Cat Cat, graphical, numerical, and inferential methods. 
 
 
 Table of patients:
