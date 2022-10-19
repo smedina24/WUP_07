@@ -67,8 +67,13 @@ The numerical results indicate that of the people who are alive 56 are women and
 
 ## Inferential results 
 
+```{r}
+chisq.test(table1)
+chisqtestGC(table1)
+fisher.test(table1)
+```
 
-
+The inferential results show that men are 2.3 times more likely to die than the women are.
 
 ## Conclusions
 
