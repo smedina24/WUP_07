@@ -35,13 +35,21 @@ Table of patients:
 with(kRdata, table(Sex, result))
 
 ```
+```{r eval=FALSE}
+kRdata <- kRdata %>%
+mutate(across(where(is.character), as.factor))
+```
 
 ## We create two bar charts - one based on frequency and the other on percent, use ggplot commands to do this
 
-`
+````{r}
+barchartGC(~result + Sex,data=kRdata)
+barchartGC(~result + Sex,data=kRdata, type="percent")
+
+```
 
   
-
+The graphical results show that from the people that are dead a little under 40 percent are women and about 70 percent are men. The men are dying at twice the rate of women. From the people that are alive about 55 percent are women and 40 percent are men. About 1/4 more women are alive then men.
 
 
 
@@ -49,6 +57,13 @@ with(kRdata, table(Sex, result))
   
 ## Numerical results
 
+```{r}
+table1 <- xtabs(~result + Sex, data=kRdata)
+rowPerc(table1)
+colPerc(table1)
+```
+
+The numerical results indicate that of the people who are alive 56 are women and 44 are men. Of the people who are dead 36 are women and 64 are men. The numerical results show that the men are dying at twice the rate of women.
 
 ## Inferential results 
 
