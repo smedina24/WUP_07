@@ -77,3 +77,4 @@ The inferential results show that men are 2.3 times more likely to die than the 
 
 ## Conclusions
 
+Dying is dependent of sex the graphical, numerical, and inferential results all demonstrate that men are dying at a larger rate then the women. The inferential results show that the odds ratio is 2.3. This means that the men are 2.3 more likely to die then the women this leads us to conclude that dying is dependent of sex. You are more likely to stay alive if you are a women.
